@@ -1,4 +1,4 @@
-.glass {
+/* .glass {
   position: relative;
   overflow: hidden;
 }
@@ -15,4 +15,4 @@
 
 .glass:hover::before {
   opacity: 1;
-}
+} */
