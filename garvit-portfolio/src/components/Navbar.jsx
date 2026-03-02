@@ -1,13 +1,17 @@
 export default function Navbar() {
+  const menu = ["home","about","skills","experience","projects","contact"];
+
   return (
-    <nav className="fixed top-0 w-full bg-black text-white flex justify-between px-10 py-4 z-50">
-      <h1 className="font-bold text-xl">Garvit Jain</h1>
-      <div className="space-x-6">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+    <nav className="w-full px-6 md:px-12 py-6 mb-4">
+      <ul className="flex justify-center gap-12 font-semibold uppercase tracking-wide text-sm">
+        {menu.map(item => (
+          <li key={item}>
+            <a href={`#${item}`} className="hover:text-cyan-400 transition">
+              {item}
+            </a>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 }

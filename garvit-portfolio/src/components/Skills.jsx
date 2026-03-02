@@ -1,21 +1,18 @@
-export default function Skills() {
-  const skills = [
-    "Java",
-    "CodeceptJS",
-    "Selenium",
-    "SQL",
-    "API Testing",
-    "Git",
-    "Docker",
-  ];
+const skills = [
+  "Java","JavaScript","Spring Boot","Hibernate","ReactJS","Angular",
+  "CodeceptJS","API Automation","UI Automation","JMeter",
+  "MySQL","SQL","Git","GitHub","Postman"
+];
 
+export default function Skills() {
   return (
-    <section id="skills" className="p-10 bg-gray-100">
-      <h2 className="text-3xl font-bold mb-4">Skills</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {skills.map((s) => (
-          <div key={s} className="bg-white shadow p-4 rounded-xl text-center">
-            {s}
+    <section id="skills" className="section">
+      <h2 className="section-title">Technical Skills</h2>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        {skills.map(skill => (
+          <div key={skill} className="skill-card glass p-6 font-semibold text-lg">
+            {skill}
           </div>
         ))}
       </div>

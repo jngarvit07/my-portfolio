@@ -1,13 +1,37 @@
-export default function Navbar() {
+import { motion } from "framer-motion";
+
+export default function Hero() {
   return (
-    <nav className="fixed top-0 w-full bg-black text-white flex justify-between px-10 py-4 z-50">
-      <h1 className="font-bold text-xl">Garvit Jain</h1>
-      <div className="space-x-6">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <section id="home" className="section">
+      <motion.h1 
+        initial={{opacity:0,y:-40}} 
+        animate={{opacity:1,y:0}} 
+        transition={{duration:0.8}}
+        className="text-6xl md:text-7xl font-extrabold">
+        <span className="bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
+          Garvit Jain
+        </span>
+      </motion.h1>
+
+      <p className="mt-6 text-xl md:text-2xl text-gray-300 max-w-3xl">
+        Software Engineer • Automation & Full Stack Developer
+      </p>
+
+      <div className="mt-10 flex gap-6">
+        <a
+          href="#contact"
+          className="premium-btn relative inline-flex items-center justify-center gap-2 px-10 py-3.5 rounded-full bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 font-semibold shadow-[0_18px_45px_rgba(8,47,73,0.85)] hover:-translate-y-1 hover:shadow-[0_26px_70px_rgba(8,47,73,0.98)] transition-transform duration-300"
+        >
+          Contact Me
+        </a>
+        <a
+          href="/resume.pdf"
+          download
+          className="premium-btn relative inline-flex items-center justify-center gap-2 px-10 py-3.5 rounded-full border border-cyan-400/60 text-cyan-100/90 bg-white/5 backdrop-blur-xl shadow-[0_18px_45px_rgba(15,23,42,0.9)] hover:bg-cyan-400 hover:text-slate-950 hover:-translate-y-1 transition-all duration-300"
+        >
+          Download Resume
+        </a>
       </div>
-    </nav>
+    </section>
   );
 }
