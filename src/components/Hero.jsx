@@ -26,7 +26,7 @@ export default function Hero() {
           Contact Me
         </a>
         <a
-          href="/public/Garvit Jain Resume.pdf"
+          href="/public/resume.pdf"
           download="Garvit_Jain_Resume.pdf"
           className="premium-btn relative inline-flex items-center justify-center gap-2 px-10 py-3.5 rounded-full border border-cyan-400/60 text-cyan-100/90 bg-white/5 backdrop-blur-xl shadow-[0_18px_45px_rgba(15,23,42,0.9)] hover:bg-cyan-400 hover:text-slate-950 hover:-translate-y-1 transition-all duration-300"
         >
