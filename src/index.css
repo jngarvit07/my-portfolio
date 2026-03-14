@@ -173,3 +173,11 @@ body::before {
 .scroll-glow {
   animation: pulseGlow 2.5s infinite;
 }
+
+/* This styles the link for desktop (laptop) users */
+@media screen and (min-width: 1024px) {
+  .phone-link {
+    pointer-events: none; /* Disables the click */
+    cursor: default;       /* Changes the mouse to a normal pointer */
+  }
+}

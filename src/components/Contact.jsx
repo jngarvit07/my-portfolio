@@ -8,18 +8,26 @@ export default function Contact() {
       <div className="glass p-10 w-full max-w-xl space-y-6 text-lg text-left">
 
         <div className="flex items-center gap-4">
-          <FaPhone className="text-cyan-400"/> +91 7425023161
+          <FaPhone className="text-cyan-400" />
+          <a className="hover:text-cyan-400" class="phone-link" target="_blank"
+            href="tel:+917425023161">
+            7425023161
+            </a>
         </div>
 
         <div className="flex items-center gap-4">
-          <FaEnvelope className="text-cyan-400"/> jaingarvit945@gmail.com
+          <FaEnvelope className="text-cyan-400" />
+          <a className="hover:text-cyan-400" target="_blank"
+             href="mailto:jaingarvit945@gmail.com">
+            jaingarvit945@gmail.com
+            </a>
         </div>
 
         <div className="flex items-center gap-4">
           <FaLinkedin className="text-cyan-400"/>
           <a className="hover:text-cyan-400" target="_blank"
              href="https://www.linkedin.com/in/jngarvit07">
-            linkedin.com/in/jngarvit07
+            Garvit Jain
           </a>
         </div>
 
@@ -27,7 +35,7 @@ export default function Contact() {
           <FaGithub className="text-cyan-400"/>
           <a className="hover:text-cyan-400" target="_blank"
              href="https://github.com/jngarvit07">
-            github.com/jngarvit07
+            Garvit Jain
           </a>
         </div>
 
